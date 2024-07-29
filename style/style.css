@@ -1,0 +1,610 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    /* background-color: #FBF9F5; */
+    background-color: black;
+    color: #fff;
+}
+
+#main {
+    width: 92%;
+    margin: auto;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+
+}
+
+nav {
+    height: 14vh;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 1.7vw;
+    letter-spacing: -1px;
+    font-weight: 800;
+    width: 30%;
+
+}
+
+nav .menu {
+    /* font-size: 1vw; */
+    width: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 40px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 7px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.menu ul li a:hover {
+    color: rgba(195, 185, 185, 0.658);
+    transition: all ease 0.7s;
+}
+nav i{
+    display: none;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    margin-top: 8vh;
+
+}
+
+#home h1 {
+    font-size: 19.5vw;
+    letter-spacing: -10px;
+    width: 70%;
+    font-weight: 700;
+    line-height: 19.5vw;
+    margin: 0;
+}
+
+#text {
+    height: 100vh;
+    width: 100%;
+    padding-top: 5vh;
+}
+
+#text h2 {
+    font-size: 8vw;
+    line-height: 8vw;
+    letter-spacing: -2px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 6px 8px 10px rgb(103, 100, 100);
+
+}
+
+#service {
+    height: 75vh;
+    width: 100%;
+
+}
+
+#service .container {
+
+    border-top: 1px solid #fff;
+    padding: 4vh 0;
+    position: relative;
+}
+
+#service .container:nth-last-child(1) {
+
+    border-bottom: 1px solid #fff;
+
+}
+
+#service .container h2 {
+    font-weight: 500;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: -1px;
+
+}
+
+#service .container p {
+    font-size: 0.9vw;
+    text-transform: capitalize;
+    line-height: 2vw;
+    padding: 0 15%;
+    margin-top: 5vh;
+    display: none;
+}
+
+#service .container::after {
+    content: "+";
+    font-size: 2.2vw;
+    position: absolute;
+    top: 32px;
+    right: 4%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 92%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid #fff; */
+    margin-bottom: 14vh;
+}
+.circle{
+    width: 40%;
+    height: 100%;
+    /* border: 2px solid red; */
+    position: relative;
+}
+.circle #gola{
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+.gola1{
+    animation: anime1 2s infinite 0.5s alternate;
+}
+.gola3{
+    animation: anime2 2s infinite 0.5s alternate;
+}
+.textarea{
+    width: 60%;
+    padding-left: 0;
+    text-align: right;
+    font-size: 2.2vw;
+    text-transform:none;
+    line-height: 4.2vw;
+    /* letter-spacing: 2px; */
+    font-weight: 500;
+}
+
+@keyframes anime1 {
+    from{
+        transform: translateY(0);
+    }    
+    to{
+        transform: translateY(30%);
+    }    
+}
+@keyframes anime2 {
+    from{
+        transform: translateY(0);
+    }    
+    to{
+        transform: translateY(-30%);
+    }    
+}
+
+
+#page2{
+    height: 100%;
+    width: 100%;
+    /* padding: 0% 10% ; */
+}
+
+#page2 .box{
+    height: 18vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.box h2{
+    font-size: 6vw;
+    width: 20%;
+}
+.box_right{
+    font-size: .9vw;
+    width: 70%;
+    height: 50%;
+    line-height: 1.8vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.box_right h1{
+    font-size: 2.5vw;
+    margin-bottom: 2.2vw;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    margin-top: 8vh;
+}
+#page3 h1{
+    font-size: 6.2vw;
+    font-weight: 500;
+    margin-left: 5vw;
+    margin-bottom: 8vh;
+}
+.project_content{
+    height: 100vh;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 13vw;
+}
+.project_content .box{
+    width: 40%;
+    /* height: 50%; */
+    margin-left: 2vw;
+}
+.project_content .box h2{
+    font-size: 3.5vw;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    margin: 3vw 0vw;
+}
+.project_content .box h4{
+    font-size: 1vw;
+    margin: .7vw 0vw;
+    font-weight: 500;
+}
+.project_content .box h4:nth-last-child(2){
+    border-bottom: 2px solid #fff;
+    padding-bottom: 1.5vw;
+    margin-bottom: 8.5vh;
+
+}
+.project_content .box a{
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1vw;
+}
+.project_content img{
+    height: 78vh;
+    width: 33vw;
+}
+
+#footer_page{
+    /* height: 100%; */
+    width: 100%;
+}
+#footer_page h1{
+    font-size: 12vw;
+    margin-top: 14%;
+    font-weight: 800;
+}
+#main_footer{
+    height: 22vh;
+    display: flex;
+    margin: 2% 0;
+}
+#main_footer .left{
+    width: 45%;
+    position: relative;
+    padding: 2vh 0;
+    text-transform: none;
+}
+#main_footer .left .mail{
+    font-size: .8vw;
+    color: #fff;
+    margin: 3vh 0;
+}
+#main_footer .left p{
+    font-size: .7vw;
+    position: absolute;
+    bottom: 10%;
+}
+#main_footer .left p a{
+    font-size: .7vw;
+    color: #fff;
+}
+
+
+
+#main_footer .mid{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#main_footer .mid h2{
+    font-size: 1vw;
+    color: #fff;
+    margin: 0.5vh;
+}
+#main_footer .right{
+    width: 45%;
+    position: relative;
+}
+#main_footer .right p{
+   font-size: 1vw;
+   position: absolute;
+   right: 0;
+   top: 20%;
+}
+
+
+@media (max-width: 600px) {
+    #main {
+        width: 95%;
+        margin: auto;
+    
+    }
+    
+    nav {
+        height: 12vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav h1 {
+        font-size: 10vw;
+        letter-spacing: -1px;
+        font-weight: 800;
+        width: 80%;
+    
+    }
+    
+    nav .menu {
+        display: none;
+    }
+
+    nav i{
+        display: block;
+        color: #fff;
+        font-size: 9vw;
+    }
+    #home {
+        display: none;
+    }
+    #text {
+        height: 50vh;
+        margin-top: 4vh;
+    }
+    
+    #text h2 {
+        font-size: 13vw;
+        line-height: 13vw;
+        letter-spacing: 0px;
+        text-shadow: none;
+    }
+    
+    #service {
+        height: 35vh;
+        width: 100%;
+        margin-top: 1vh;
+    }
+    
+    #service .container { 
+        border-top: 1px solid #fff;
+        padding: 4vh 0;
+        position: relative;
+    }
+    
+    
+    #service .container h2 {
+        font-weight: 500;
+        font-size: 7.5vw;
+        letter-spacing: -1px;
+    
+    }
+    
+    #service .container::after {
+        content: "+";
+        font-size: 8.2vw;
+        position: absolute;
+        top: 34px;
+    }
+
+    #page1 {
+        height: 70vh;
+        width: 95%;
+        margin-top: 9vh;
+    }
+    .circle{
+        width: 40%;
+        height: 100%;
+        position: absolute;
+    }
+    .circle #gola{
+        height: 14vh;
+        width: 14vh;
+        top: 35%;
+        left: 78%;
+        animation: none;
+    }
+    .textarea{
+        width: 95%;
+        text-align: left;
+        font-size: 5.4vw;
+        line-height: 12.2vw;
+    }
+    
+
+    #page2{
+        height: 100%;
+        width: 100%;
+        /* padding: 0% 10% ; */
+    }
+    
+    #page2 .box{
+        height: 50vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5vh;
+    }
+    .box h2{
+        font-size: 15vw;
+        width: 90%;
+    }
+    
+    .box_right{
+       
+        width: 90%;
+        height: 70%;
+        line-height: 5.4vw;
+        
+    }
+
+    .box_right p{
+       
+        font-size: 3vw;
+        color: #ffffff9e;
+        
+    }
+    .box_right h1{
+        font-size: 8vw;
+        margin-bottom: 5vw;
+    }
+    
+    #page3{
+        height: 100vh;
+        width: 90%;
+        margin: auto;
+        margin-top: 4vh;
+        margin-bottom: 20vh;
+    }
+    #page3 h1{
+        font-size: 14.2vw;
+        text-align: none;
+        font-weight: 600;
+        margin-left: 0;
+        margin-bottom: 2vh;
+    } 
+    .project_content{
+        height: 75vh;
+        width: 95%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        flex-direction: column-reverse;
+    }
+    .project_content .box{
+        width: 100%;
+        margin-left: 0vw;
+    }
+    .project_content .box h2{
+        font-size: 8vw;
+        width: 100%;
+        border-bottom: 2px solid #fff;
+        margin: 10vw 0vw;
+    }
+    .project_content .box h4{
+        font-size: 4vw;
+        margin: 1.7vw 0vw;
+    }
+    .project_content .box h4:nth-last-child(2){
+        border-bottom: 2px solid #fff;
+        padding-bottom: 1.5vw;
+        margin-bottom: 3.5vh;
+    }
+    .project_content .box a{
+        font-size: 3.5vw;
+    }
+    .project_content img{
+        height: 45vh;
+        width: 66vw;
+    }
+
+
+
+
+    #footer_page{
+        height: 40vh;
+        width: 100%;
+    }
+    #footer_page h1{
+        font-size: 14vw;
+        margin-top: 15vh;
+        font-weight: 800;
+        text-align: center;
+    }
+    #main_footer{
+        height: 22vh;
+        display: flex;
+        flex-direction: column;
+        margin: 2% 0;
+        gap: 2vh;
+    }
+    #main_footer .left{
+        width: 100%;
+    }
+    #main_footer .left h4{
+        font-size: 6vw;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    #main_footer .left .mail{
+        font-size: 3vw;
+        color: #fff;
+        margin-left: 26%;
+        text-align: center;
+    }
+    #main_footer .left p{
+        font-size: 3.7vw;
+        position: absolute;
+        text-align: center;
+        margin-top: 2vh;
+        position: relative;
+        bottom: 0;        
+        line-height: 2.8vh;
+    }
+    #main_footer .left p a{
+        font-size: 3.7vw;
+        color: #fff;
+    }
+    
+    
+    
+    #main_footer .mid{
+        width: 100%;
+    }
+    #main_footer .mid h2{
+        font-size: 3.2vw;
+        margin: 0.5vw;
+    }
+    #main_footer .right{
+        width: 100%;
+        position: relative;
+    }
+    #main_footer .right p{
+       font-size: 2.9vw;
+       position: relative;
+        text-align: center;
+    }
+    
+    
+}
